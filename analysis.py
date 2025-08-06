@@ -2,7 +2,7 @@ import yfinance as yf
 import pandas as pd
 import ta
 
-def fetch_stock_data(ticker: str, period="6mo", interval="1d"):
+def fetch_stock_data(ticker: str, period="60mo", interval="1d"):
     stock = yf.Ticker(ticker)
     df = stock.history(period=period, interval=interval)
     df.dropna(inplace=True)
