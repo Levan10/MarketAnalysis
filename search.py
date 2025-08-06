@@ -1,6 +1,6 @@
 import requests
 
-
+#Allows user to search company name as ticker
 def search_ticker(company_name):
     url = f"https://query1.finance.yahoo.com/v1/finance/search?q={company_name}"
     headers = {
