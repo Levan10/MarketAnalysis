@@ -4,3 +4,13 @@ ta
 requests
 streamlit
 matplotlib
+
+
+#Streamlit uses this to auto install packages above
+
+#streamlit – for building the UI
+#yfinance – for stock data
+#ta – for technical indicators
+#requests – for API calls
+#plotly – for interactive charts
+#pandas – for data handling

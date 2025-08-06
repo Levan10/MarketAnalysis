@@ -13,14 +13,20 @@ st.set_page_config(page_title="Stock Analysis App", layout="wide")
 st.title("📊 Stock Analyzer with Recent News")
 
 
+    #interactive chart with:
+    #Close price
+    #SMA 20 (20-day Simple Moving Average)
+    #SMA 50 (50-day Simple Moving Average)"""
+
 # ---------- Plotting Function using Plotly ----------
 def plot_stock(df):
-    """
-    Creates an interactive chart with:
-    - Close price
-    - SMA 20 (20-day Simple Moving Average)
-    - SMA 50 (50-day Simple Moving Average)
-    """
+    # Get the most recent close price
+    current_price = df["Close"].iloc[-1]
+    formatted_price = f"${current_price:,.2f}"
+
+    # Show it above the chart
+    st.subheader(f"Current Price: {formatted_price}")
+
     fig = go.Figure()
 
     # Plot the stock's closing price
@@ -45,7 +51,7 @@ def plot_stock(df):
 
     # Set chart layout and titles
     fig.update_layout(
-        title='📈 Stock Price with SMA20 and SMA50',
+        title='📈 Stock Chart',
         xaxis_title='Date',
         yaxis_title='Price (USD)',
         hovermode='x unified'  # shows all values when hovering

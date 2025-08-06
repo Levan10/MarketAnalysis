@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "8c50f187815c495fa911f27f32575098"  # Replace this!
+API_KEY = "8c50f187815c495fa911f27f32575098"  #API for latest news based on stock from newsapi.org
 
 def fetch_news(company_name):
     url = (
