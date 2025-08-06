@@ -4,6 +4,7 @@ ta
 requests
 streamlit
 matplotlib
+plotly
 
 
 #Streamlit uses this to auto install packages above

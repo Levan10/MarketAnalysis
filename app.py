@@ -3,6 +3,7 @@ import streamlit as st
 import plotly.graph_objects as go
 from strategy import generate_signal, morning_star_rating  # import morning_star_rating
 
+
 # Import custom modules for stock data, indicators, signal generation, news, and ticker search
 from analysis import fetch_stock_data, add_indicators
 from news import fetch_news
